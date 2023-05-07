@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Booking Ticket System</title>
+	<style>
+		.form-image {
+			background-image: url('https://gravitybooking.com/wp-content/uploads/2021/05/header-2.png');
+			background-size: cover;
+                        background-color:pink;
+			height: 520px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		form {
+			background-color:lightblue;
+			padding: 15px;
+			border-radius: 10px;
+		}
+
+		form input[type="text"], form input[type="password"], form input[type="email"], form input[type="tel"], form input[type="date"] {
+			padding: 10px;
+			margin: 10px 0;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+		}
+
+		form input[type="submit"], form input[type="button"] {
+			background-color:green;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+
+		form input[type="submit"]:hover, form input[type="button"]:hover {
+			background-color: #45a049;
+		}
+
+		form label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		form span {
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<center><h1><i><u>WELCOME TO PVR CINEMAS!!!</h1></i></u></center>
+	<h2><p>Select the page below to get more details:</p></h2>
+	<ul>
+		<h3><b><li><a href="ticket booking page.html">Booking Page</a></li></h3>
+		<h3><b><li><a href="now-showing.html">Now-Showing Page</a></li></h3>
+	</ul>
+
+	<div class="form-image">
+		<form action="#" method="post">
+			<h2>Sign Up Form</h2>
+			<label for="registration-id">Registration ID:</label>
+			<input type="text" id="registration-id" name="registration-id" placeholder="Enter your registration ID*" required>
+			<span id="registration-id-error"></span>
+
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" placeholder="Enter your username*" required>
+			<span id="username-error"></span>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password*" required>
+			<span id="password-error"></span>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email*" required>
+			<span id="email-error"></span>
+
+			<label for="mobile-number">Mobile Number:</label>
+			<input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number*" pattern="[0-9]{10}" required>
+			<span id="mobile-number-error"></span>
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" placeholder="Enter your date of birth*" required>
+			<span id="dob-error"></span>
+
+			<input type="submit" value="Submit">
+			<input type="button" value="Cancel">
+		</form>
+	</div>
+
+	<script>
+	</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Page</title>
+	<style>
+		body {
+			background-image: url("https://www.shutterstock.com/image-vector/online-movie-ticket-booking-concept-260nw-1130091461.jpg"); /*replace with your image*/
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			margin: 0 auto;
+			padding: 20px;
+			max-width: 790px;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+                 .seat {
+			display: inline-block;
+			width: 30px;
+			height: 200px;
+			margin: 5px;
+			border-radius: 5px;
+			background-color: #e6e6e6;
+			cursor:pointer;
+		}
+		.seat.available {
+			background-color: #b8f1b0;
+		}
+		.seat.booked {
+			background-color: #f1b0b0;
+			cursor: not-allowed;
+		}
+	
+
+		h1 {
+			text-align: center;
+			font-size: 48px;
+			margin-top: 50px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+                        height:650px;
+		}
+		label {
+			font-size: 24px;
+			margin-top: 20px;
+			display: block;
+		}
+		input[type="text"], input[type="number"], select {
+			padding: 10px;
+			margin-top: 10px;
+			font-size: 18px;
+			border: none;
+			border-radius: 5px;
+			width: 100%;
+		}
+		input[type="submit"] {
+			padding: 5px;
+			margin-top: 15px;
+			font-size: 20px;
+			border: none;
+			border-radius: 5px;
+			background-color:green;
+			color: #fff;
+			cursor: pointer;
+			transition: background-color 0.2s ease-in-out;
+			width: 200px;
+			align-self: center;
+		}
+		input[type="submit"]:hover {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>--BOOK YOUR MOVIE---</h1>
+		<form>
+			<label for="movie">Select a Movie:</label>
+			<select id="movie" name="movie">
+				<option value="Ponniyin Selvan 2">Ponniyin Selvan 2</option>
+				<option value="Viduthalai">Viduthalai</option>
+				<option value="Star Wars: The Rise of Skywalker">Star Wars: The Rise of Skywalker</option>
+			</select>
+
+	
+
+			<label for="seats">Select Number of Seats:</label>
+			<input type="number" id="seats" name="seats" min="1" max="10" placeholder="Enter number of seats">
+			<label for="total-cost">Cost per head Rs.190:</label>
+			<input type="number" id="TotalCost" name="costPerHead" placeholder="Total cost for tickets booked">
+			
+			<label for="offers">Select Any Offers:</label>
+			<select id="offers" name="offers">
+				<option value="">Select Offer</option>
+				<option value="If senior citizen">20% off for Senior citizen</option>
+				<option value="50% Off">50% Off for Bulk booking</option>
+				<option value="Free Drink">Free Welcome Drink</option>
+			</select>
+<div>
+		<label for="Available seats">Available seats</label>
+			<select id="seats" name="seats">
+				<option value="Column 1">Column 1</option>
+				<option value="Column 2">Column 2</option>
+				<option value="Column 3">Column 3</option>
+                                 <option value="Column 4">Column 4</option>
+<option value="Column 9">Column 9</option>
+<option value="Column 10">Column 10</option>
+<option value="Column 11">Column 11</option>
+<option value="Column 12">Column 12</option>
+<option value="Column 13">Column 13</option>
+<option value="Column 14">Column 14</option>
+			</select>	</div>
+<h2><p>Number of booked seats: <span id="booked-seats">30</span></p></h2>
+
+			<input type="submit" value="Book Now">
+		</form>
+	</div>
+
+
+
+</body>
+</html>
